@@ -1,7 +1,6 @@
 class Solution {
     public boolean isPalindrome(int x) {
         boolean result = false;
-        
         int n = x;
         int rev = 0;
         
@@ -11,9 +10,8 @@ class Solution {
             n = n / 10;
         }
         
-        if(x == rev){
-            result = true;
-        }
+        result = x==rev ? true: false;
+        
         return result;
     }
 }
